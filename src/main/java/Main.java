@@ -11,7 +11,7 @@ public class Main extends Sensor {
         1. 스마트홈 시스템을 가동합니다.
         2. 생성자 사용
          */
-        RemotController remotControl = new RemotController(
+        RemotController remotController = new RemotController(
                 "스마트홈 시스템을 시작합니다.\n" + "...");
 
 
@@ -53,7 +53,7 @@ public class Main extends Sensor {
         /*
         창문과 스피커 볼륨 조절 후 시스템 종료
          */
-        remotControl.getTurnOff("스마트홈 시스템을 종료합니다.\n");
+        remotController.getTurnOff("스마트홈 시스템을 종료합니다.\n");
         Thread.sleep(2000);
 
 
