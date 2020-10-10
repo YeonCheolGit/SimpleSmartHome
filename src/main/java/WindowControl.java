@@ -4,7 +4,7 @@ public class WindowControl {    // Main 메소드에서 발생한 난수를 기�
 
     private String openWindow;
     private String closeWindow;
-    private String closeHalfwindow;
+    private String closeHalfWindow;
 
     static Scanner scanner = new Scanner(System.in);
 
