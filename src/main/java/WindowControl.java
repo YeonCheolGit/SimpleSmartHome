@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
-/*
-Main 메소드에서 발생한 난수를 기준으로 정함
- */
-public class WindowControl {
+public class WindowControl {    // Main 메소드에서 발생한 난수를 기준으로 정함
 
     private String openWindow;
     private String closeWindow;
@@ -52,7 +49,7 @@ public class WindowControl {
     3. 음악이 마음에 드는지 Y/N 입력 받음
     4. 음악이 마음에 들지 않을 시음 다른 노래 추천
     */
-    public static void getCloseHalfwindow(String comment) {
+    public static void getCloseHalfWindow(String comment) {
         System.out.println(comment);
 
         System.out.println("날씨가 흐릴 땐 '나훈아 - 테스형' 노래가 어떠신가요? (Y/N)");

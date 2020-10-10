@@ -17,7 +17,7 @@ public class Sensor extends Greeting {
             WindowControl.getOpenWindow("오늘은 하루종일 맑고, 시원한 바람이 불 예정이니 창문을 열도록 하겠습니다.\n");
             Thread.sleep(2000);
         } else {
-            WindowControl.getCloseHalfwindow("날씨가 흐리므로 창문을 반틈 닫겠습니다.\n");
+            WindowControl.getCloseHalfWindow("날씨가 흐리므로 창문을 반틈 닫겠습니다.\n");
             Thread.sleep(2000);
         }
     }
