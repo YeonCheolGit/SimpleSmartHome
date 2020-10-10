@@ -51,12 +51,12 @@ public class Sensor extends Greeting {
             SoundController.getVolumeUp(
                     "주변 소음이 50데시벨을 넘었습니다.\n" +
                             "주변의 소음이 심하여, 스피커 볼륨을 올리겠습니다\n");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } else {
             SoundController.getVolumeDown(
                     "주변 소음이 50데시벨 이하 입니다.\n" +
                             "현재 조용한 환경으로, 스피커 볼륨을 조금 낮추겠습니다\n");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         }
     }
 
