@@ -5,7 +5,7 @@ public class Greeting {
     /*
     1. Main 클래스에서 활용될 첫인사
     2. "Hey, siri"를 Scanner 클래스를 활용해서 받으면 시스템 시작. 대소문자 무시
-    3. "Hey, siri"가 아닌 다른 멘트 입력 시 "다시 불러주세요" 나옴.
+    3. 다른 멘트 입력 시 else 구문
      */
     public static void hello() {
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +19,7 @@ public class Greeting {
             }
         }
     }
+
 
     /*
     1. Main 클래스에서 활용될 끝인사

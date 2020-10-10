@@ -5,19 +5,11 @@ public class RemotControl {
 
 
     /*
-    1. 스마트 시스템 가동을 위한 setter
-    2. 시작할 때의 인사를 Main 메소드에서 넣어줌
+    1. Hey, Siri 호출 후 시스템이 가동되는 생성자
+    2. Main 클래스에서 가동될 때의 멘트를 입력
      */
-    public void setTurnOn(String turnOn) {
+    public RemotControl(String turnOn) throws InterruptedException {
         this.turnOn = turnOn;
-    }
-
-    /*
-    1. 스마트 시스템을 가동하는 getter
-    2. Main에서 설정한 turnOn을 가져옴
-    2. 가동 중 이라는 효과를 위해서 쓰레드 sleep 200millis
-    */
-    public void getTurnOn() throws InterruptedException {
         System.out.println(turnOn);
         Thread.sleep(2000);
     }
@@ -30,6 +22,4 @@ public class RemotControl {
     public void getTurnOff(String comment) {
         System.out.println(comment);
     }
-
-
 }
