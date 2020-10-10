@@ -11,7 +11,7 @@ public class Main extends Sensor {
         1. 스마트홈 시스템을 가동합니다.
         2. 생성자 사용
          */
-        RemotControl remotControl = new RemotControl(
+        RemotController remotControl = new RemotController(
                 "스마트홈 시스템을 시작합니다.\n" + "...");
 
 
@@ -32,7 +32,6 @@ public class Main extends Sensor {
 
         weatherSensor(b);
 
-        System.out.println();
         Thread.sleep(2000);
 
 

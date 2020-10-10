@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WindowControl {    // Main 메소드에서 발생한 난수를 기준으로 정함
+public class WindowController {    // Main 메소드에서 발생한 난수를 기준으로 정함
 
     private String openWindow;
     private String closeWindow;

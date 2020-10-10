@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SoundControl {
+public class SoundController {
 
     private String volumeUp;
     private String volumeDown;

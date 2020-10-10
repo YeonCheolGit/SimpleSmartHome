@@ -1,4 +1,4 @@
-public class RemotControl {
+public class RemotController {
 
     private String turnOn;
     private String turnOff;
@@ -8,7 +8,7 @@ public class RemotControl {
     1. Hey, Siri 호출 후 시스템이 가동되는 생성자
     2. Main 클래스에서 가동될 때의 멘트를 입력
      */
-    public RemotControl(String turnOn) throws InterruptedException {
+    public RemotController(String turnOn) throws InterruptedException {
         this.turnOn = turnOn;
         System.out.println(turnOn);
         Thread.sleep(2000);

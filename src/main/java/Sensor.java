@@ -13,13 +13,13 @@ public class Sensor extends Greeting {
     */
     public static void weatherSensor(int weather) throws InterruptedException {
         if (weather == 1) {
-            WindowControl.getCloseWindow("비가 올 예정이니, 창문을 닫도록 하겠습니다.\n");
+            WindowController.getCloseWindow("비가 올 예정이니, 창문을 닫도록 하겠습니다.\n");
             Thread.sleep(2000);
         } else if (weather == 2) {
-            WindowControl.getOpenWindow("오늘은 하루종일 맑고, 시원한 바람이 불 예정이니 창문을 열도록 하겠습니다.\n");
+            WindowController.getOpenWindow("오늘은 하루종일 맑고, 시원한 바람이 불 예정이니 창문을 열도록 하겠습니다.\n");
             Thread.sleep(2000);
         } else {
-            WindowControl.getCloseHalfWindow("날씨가 흐리므로 창문을 반틈 닫겠습니다.\n");
+            WindowController.getCloseHalfWindow("날씨가 흐리므로 창문을 반틈 닫겠습니다.\n");
             Thread.sleep(2000);
         }
     }
@@ -29,15 +29,17 @@ public class Sensor extends Greeting {
     1. Main 클래스에서 사용될 볼륨 조절 메소드
     2. 임의의 난수 발생 후 50기준으로 볼륨 up, down
     */
-    public static void soundSensor(int sound) {
+    public static void soundSensor(int sound) throws InterruptedException {
         if (sound > 50) {
-            SoundControl.getVolumeUp(
+            SoundController.getVolumeUp(
                     "주변 소음이 50데시벨을 넘었습니다.\n" +
                             "주변의 소음이 심하여, 스피커 볼륨을 올리겠습니다\n");
+            Thread.sleep(1000);
         } else {
-            SoundControl.getVolumeDown(
+            SoundController.getVolumeDown(
                     "주변 소음이 50데시벨 이하 입니다.\n" +
                             "현재 조용한 환경으로, 스피커 볼륨을 조금 낮추겠습니다\n");
+            Thread.sleep(1000);
         }
     }
 
