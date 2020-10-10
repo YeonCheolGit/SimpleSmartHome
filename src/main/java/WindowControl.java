@@ -20,7 +20,7 @@ public class WindowControl {
      */
     public static void getCloseWindow(String comment) {
         System.out.println(comment);
-        System.out.println("비가 올 때는 '김현석 - 비처럼 음악처럼' 어떠신가요?? (Y/N)");
+        System.out.println("비가 올 때는 '김현식 - 비처럼 음악처럼' 어떠신가요?? (Y/N)");
         if (scanner.nextLine().equalsIgnoreCase("Y")) {
             System.out.println("(재생중) 비가 내리고 ~ 음악이 흐르면 ~ ");
         } else {

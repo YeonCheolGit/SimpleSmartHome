@@ -1,4 +1,4 @@
-public class Main {
+public class Main extends Sensor {
     public static void main(String[] args) throws InterruptedException {
 
         /*
@@ -21,10 +21,10 @@ public class Main {
         3. 날씨가 좋으면 창문 열기, 나쁘면 닫기, 그냥 흐리면 반틈만 닫
         4. 1, 2, 3 세가지 난수 발생 후 날씨 대입
          */
-        Sensor.sensing("오늘의 날씨를");
+        sensing("오늘의 날씨를");
         int b = (int) (Math.random() * 4);
 
-        Sensor.weatherSensor(b);
+        weatherSensor(b);
 
         System.out.println();
         Thread.sleep(2000);
@@ -36,13 +36,13 @@ public class Main {
         3. 데시벨을 의미하는 난수 발생 후 센서에 입력
         4. 50을 기준으로 스피커 볼륨 조절
         */
-        Sensor.sensing("주변의 소음을");  // sensing 메소드 재활용
+        sensing("주변의 소음을");  // sensing 메소드 재활용
 
         int sound = 0;
         int a = (int) (Math.random() * 100);
         sound += a;
 
-        Sensor.soundSensor(sound);
+        soundSensor(sound);
 
 
         /*
