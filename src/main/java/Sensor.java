@@ -3,7 +3,6 @@
 2. Main 클래스에서 Sensor 상속 받음
 3. 즉 Greeting을 조상클래스로 만듬
  */
-
 public class Sensor extends Greeting {
 
     /*
