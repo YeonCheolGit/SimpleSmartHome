@@ -1,4 +1,10 @@
-public class Sensor {
+/*
+1. Greeting 상속받음
+2. Main 클래스에서 Sensor 상속 받음
+3. 즉 Greeting을 조상클래스로 만듬
+ */
+
+public class Sensor extends Greeting {
 
     /*
     1. Main 클래스에서 사용될 메소드

@@ -4,7 +4,7 @@ public class Main extends Sensor {
         /*
         시스템 가동 전 인사
          */
-        Greeting.hello();
+        hello();
 
 
         /*
@@ -55,7 +55,6 @@ public class Main extends Sensor {
         /*
         시스템 종료 후 끝인사
          */
-        Greeting.bye();
-
+        bye();
     }
 }
