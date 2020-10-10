@@ -8,6 +8,23 @@ import java.util.Scanner;
 public class Sensor extends Greeting {
 
     /*
+    1. 조명을 켜는 센서
+    2. int 타입을 Scanner 클래스로 받은 후 반환
+     */
+    public static void lightSensor() throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("어떤 공간의 조명을 켜드릴까요? (1 = 부엌, 2 = 부엌 + 거실)");
+        int number = scanner.nextInt();
+
+        if (number == 1) {
+            LightController.lightOn("부엌");
+        } else {
+            LightController.lightOn("부엌", "거실");
+        }
+    }
+
+
+    /*
     1. Main 클래스에서 사용될 메소드
     2. 임의의 난수 1, 2 발생 후 1이면 창문 닫기, 2면 열기
     */
@@ -43,22 +60,6 @@ public class Sensor extends Greeting {
         }
     }
 
-
-    /*
-    1. 조명을 켜는 센서
-    2. int 타입을 Scanner 클래스로 받은 후 반환
-     */
-    public static void lightSensor() throws InterruptedException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("어떤 공간의 조명을 켜드릴까요? (1 = 부엌, 2 = 부엌 + 거실)");
-        int number = scanner.nextInt();
-
-        if (number == 1) {
-            LightController.lightOn("부엌");
-        } else {
-            LightController.lightOn("부엌", "거실");
-        }
-    }
 
     /*
     1. 센서가 측정하는 동안 보여 줄 안내문구
