@@ -26,7 +26,7 @@ public class Greeting {
     2. 스마트시스템이 종료되어도 음악은 계속 나옴
      */
     public static void bye() throws InterruptedException {
-        System.out.println("시스템이 종료되어도 음악은 종료되지 않습니다.");
+        System.out.println("시스템이 종료되어도 음악은 계속 재생됩니다.");
         Thread.sleep(2000);
         System.out.println("좋은 하루 되세요^^");
     }

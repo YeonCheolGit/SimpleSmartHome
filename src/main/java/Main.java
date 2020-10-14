@@ -44,7 +44,7 @@ public class Main extends Sensor {
         sensing("주변의 소음을");  // sensing 메소드 재활용
 
         int sound = 0;
-        int a = (int) (Math.random() * 100);
+        int a = (int) (Math.random() * 101);
         sound += a;
 
         soundSensor(sound);
